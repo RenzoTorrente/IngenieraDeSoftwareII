@@ -10,14 +10,14 @@
   <h4>Bienvenidos a los futuros alumnos del Terciario Urquiza</h4>
     <p>Completa el siguiente formulario para reservar tu cupo 2022</p>
 </div>
-<form class="row g-3" action="data.php" method="post">
+<form class="row g-3" action="dataview.php" method="POST">
     <div class="col-md-6">
       <label class="form-label">Email</label>
       <input type="email" class="form-control" >
     </div>
     <div class="col-md-6">
         <label class="form-label">Nombre y apellido</label>
-        <input type="text" class="form-control" name="nombre">
+        <input type="text" id="nombre" class="form-control" name="nombre">
       </div>
     <div class="col-6">
       <label  class="form-label">Dirección:</label>
@@ -25,19 +25,19 @@
     </div>
     <div class="col-6">
         <label  class="form-label">Carrera:</label>
-        <input type="text" class="form-control" name="carrera">
+        <input type="text" id="carrera" class="form-control" name="carrera">
       </div>
     <div class="col-md-6">
       <label class="form-label">Provincia</label>
       <input type="text" class="form-control" name="provincia">
     </div>
     <div class="col-md-4">
-      <label for="inputState" class="form-label">Ciudad</label>
+      <label class="form-label">Ciudad</label>
         <input type="text" class="form-control" name="ciudad">
     </div>
     <div class="col-md-2">
-      <label for="inputZip" class="form-label">DNI:</label>
-      <input type="text" class="form-control" name="dni">
+      <label  class="form-label">DNI:</label>
+      <input type="text" id="dni" class="form-control" name="dni">
     </div>
     <div class="col-12">
       <button type="submit" class="btn btn-primary">Enviar</button>
